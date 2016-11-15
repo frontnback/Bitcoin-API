@@ -1,0 +1,12 @@
+basePath: /
+host: '[your_IPv6]:port'
+info:
+  contact: {email: your_email, name: your_name}
+  description: your_description
+  title: your_title
+  x-21-app-image: your_app_image
+  x-21-category: your_category
+  x-21-quick-buy: 21 buy http://[your_IPv6]:port/app_route/argument
+  x-21-total-price: {max: price, min: price}
+schemes: [http]
+x-21-manifest-path: /manifest
