@@ -1,12 +1,12 @@
 basePath: /
-host: '[your_IPv6]:port'
+host: '[fcee:a977:ee41:e895:bee4:0000:0000:0001]:10118'
 info:
-  contact: {email: your_email, name: your_name}
-  description: your_description
-  title: your_title
-  x-21-app-image: your_app_image
-  x-21-category: your_category
-  x-21-quick-buy: 21 buy http://[your_IPv6]:port/app_route/argument
-  x-21-total-price: {max: price, min: price}
+  contact: {email: darinstone@gmail.com, name: frontnback}
+  description: Download videos off youtube and save for later
+  title: UTUBE
+  x-21-app-image: https://cdn.filepicker.io/api/file/eYISaDNSD24wQ7sbNRAa
+  x-21-category: Entertainment
+  x-21-quick-buy: 21 buy https://[fcee:a977:ee41:e895:bee4::1]:10118/YouTube?URL=https://www.youtube.com/watch?v=4PN5JJDh78I
+  x-21-total-price: {max: 9600, min: 9600}
 schemes: [http]
 x-21-manifest-path: /manifest

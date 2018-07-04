@@ -1,15 +1,15 @@
 #     ____  _ __             _          ___    ____  ____
 #    / __ )(_) /__________  (_)___     /   |  / __ \/  _/
-#   / __  / / __/ ___/ __ \/ / __ \   / /| | / /_/ // /  
-#  / /_/ / / /_/ /__/ /_/ / / / / /  / ___ |/ ____// /   
-# /_____/_/\__/\___/\____/_/_/ /_/  /_/  |_/_/   /___/   
-                                                       
-#   ______                     __      __     
-#  /_  __/__  ____ ___  ____  / /___ _/ /____ 
+#   / __  / / __/ ___/ __ \/ / __ \   / /| | / /_/ // /
+#  / /_/ / / /_/ /__/ /_/ / / / / /  / ___ |/ ____// /
+# /_____/_/\__/\___/\____/_/_/ /_/  /_/  |_/_/   /___/
+
+#   ______                     __      __
+#  /_  __/__  ____ ___  ____  / /___ _/ /____
 #   / / / _ \/ __ `__ \/ __ \/ / __ `/ __/ _ \
 #  / / /  __/ / / / / / /_/ / / /_/ / /_/  __/
-# /_/  \___/_/ /_/ /_/ .___/_/\__,_/\__/\___/ 
-#                  /_/                       
+# /_/  \___/_/ /_/ /_/ .___/_/\__,_/\__/\___/
+#                  /_/
 
 # Description: How to take an API and wrap it so requests to it pay you bitcoin.
 # Repo: Bitcoin API Template (github.com/cryptopelago/bitcoin-api-template)
@@ -29,12 +29,12 @@ app = Flask(__name__)
 wallet = Wallet()
 payment = Payment(app, wallet)
 
-# Add 402
-@app.route('/your_route')
-@payment.required(your_price)
+# Add 402 = payment required
+@app.route('/YoutTube')
+@payment.required(9600)
 def lookup_string():
-    something = request.args.get('something')
-    link = requests.get('some_url'+something)
+    something = request.args.get('URL')
+    link = requests.get('http://api.daniil.it/?url='+something)
     return link.text
 
 # Add Manifest
